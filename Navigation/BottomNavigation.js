@@ -12,6 +12,7 @@ import UploadScreen from '../Screens/UploadScreen';
 import PayScreenComponent from '../Screens/PayScreenComponent';
 import NewUserStack from './NewUserStackNavigation';
 import NewUserStackNavigation from '../Navigation/NewUserStackNavigation';
+import VideoScreen from '../Screens/VideoScreen';
 
 
 const Tab = createBottomTabNavigator();
@@ -23,7 +24,7 @@ const BottomNavigation = () => {
      screenOptions={{
           tabBarActiveTintColor:'black',//label text color
           tabBarActiveBackgroundColor:'#f0edf6',//background color
-          tabBarInactiveBackgroundColor:'#226557',
+          tabBarInactiveBackgroundColor:'#2e4057',
           barStyle: { backgroundColor: '#3BAD87' },
           tabBarShowLabel:true,
           tabBarStyle:{
@@ -32,7 +33,7 @@ const BottomNavigation = () => {
             borderRadius:50,
             bottom:10,
             marginHorizontal:16,
-            
+            color:"#000"
           }
         }}
       >
@@ -46,7 +47,7 @@ const BottomNavigation = () => {
           }
       }}
       />
-      <Tab.Screen name="CreateUser" component={CreateUserScreen} 
+      <Tab.Screen name="VideoScreen" component={VideoScreen} 
        options={{
         tabBarIcon: ({focused})=>{
         return(

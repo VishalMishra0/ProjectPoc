@@ -5,6 +5,7 @@ import CreateUserScreen from '../Screens/CreateUserScreen'
 
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import EditUserScreen from '../Screens/EditUserScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +14,7 @@ const NewUserStackNavigation = () => {
     <Stack.Navigator>
         <Stack.Screen name="HomeScreen" component={HomeScreen} />
         <Stack.Screen name="CreateUserScreen" component={CreateUserScreen} />
+        <Stack.Screen name="EditUserScreen" component={EditUserScreen} />
        
         {/* <Stack.Screen name='BottomNavigation' component={BottomNavigation}
           options={{
